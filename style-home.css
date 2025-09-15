@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  padding: 20px 30px;
+  align-items: center; /* alinhou verticalmente no centro*/
+  justify-content: space-between; /* alinhou os itens nas extremidades*/
+  background-color: #e6f7ff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sobra suave */
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #333;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0077cc; /* muda de cor no hover */
+}
+
+/* Página atual */
+nav ul li a[aria-current="page"] {
+  color: #0077cc; 
+  border-bottom: 2px solid #0077cc; /* destaque no ativo */
+  padding-bottom: 2px;
+}
+
+main {
+  flex: 1;
+  padding: 70px 10px 20px;
+}
+
+.home {
+  padding: 80px 20px; /* deixa espaço */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.caixa-home {
+  background-color: #eaf6fc;  
+  border: 1px solid #cceeff;    
+  border-radius: 20px;   
+  padding: 40px;
+  max-width: 700px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* leve sombra */
+  font-family: 'Judson', serif;
+}
+
+.caixa-home h1 {
+  font-family: 'Judson', serif;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.caixa-home p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.carrossel-ongs {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.carrossel-ongs h2 {
+  margin-bottom: 30px;
+  font-family: 'Judson', serif;
+}
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrossel-slides {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.card-ong {
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  width: 200px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.card-ong:hover {
+  transform: scale(1.05);
+}
+
+.seta-esquerda, .seta-direita {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #e6f7ff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+.rodape {
+  margin: 0;
+}
