@@ -15,72 +15,114 @@
 
 <body>
   <header>
+    <div class="container">
     <div class="logo">
       <img class="logo-img" src="assets/ong-net.png" alt="Logo ONG NET">
     </div>
 
     <nav aria-label="Menu principal">
       <ul>
-        <li class="item-menu"><a href="index.html">Home</a></li>
-        <li class="item-menu"><a href="sou-ong.htlm">Sou ONG</a></li>
-        <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="sou-ong.htlm">Sou ONG</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <main>
     <section class="home">
-      <article class ="caixa-home">
+      <article class ="card-home">
+      <div class="home-texto">
         <h1>Titulo Home</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in debitis corporis pariatur autem. Amet eos, quam possimus modi, ad nulla sed provident sit quidem rerum tempore repellat placeat eveniet.</p>
+
+        <a href="#" class="btn-home">Ver Mais</a>
+      </div>
+
+      <div class="home-imagem">
+        <div class="circulo"></div>
+        <img src="assets/mulher.png" alt="Pessoa abraçando a si mesma">
+      </div>
       </article>
     </section>
+
+    <div class="search-container">
+      <input type="text" placeholder="Buscar ONG..." class="search-input">
+
+      <button type="submit" class="search-btn" aria-label="Buscar">
+        <img src="assets/lupa.png" alt="Icone de busca">
+      </button>
+    </div>
       
-    <section class="carrossel-ongs" aria-label="ONGs disponiveis">
-      <h2>Conheça as ONGs</h2>
-      
+    <section>
       <div class="carrossel-container">
         <button class="seta-esquerda" aria-label="Ver anterior">&larr;</button>
           
       <div class="carrossel-slides">
+
         <article class="card-ong">
-          <a href="ong1.html">
-            <h3>ONG Exemplo</h3>
-            <p>Descrição curta</p>
-          </a>
+          <div class="card-topo">
+            <img src="assets/ong-1.jpg" alt="Logo da ONG 1">
+          </div>
+          <div class="card-base">
+            <h3>ONG 1</h3>
+            <a href="ong1.html" class="btn-ong">Ver Mais</a>
+          </div>
         </article>
+
         <article class="card-ong">
-          <a href="ong2.html">
-            <h3>ONG Exemplo 2</h3>
-            <p>Descrição curta</p>
-          </a>
+          <div class="card-topo">
+            <img src="assets/ong-1.jpg" alt="Logo da ONG 2">
+          </div>
+          <div class="card-base">
+            <h3>ONG 2</h3>
+            <a href="ong2.html" class="btn-ong">Ver Mais</a>
+          </div>
         </article>
+
         <article class="card-ong">
-          <a href="ong3.html">
-            <h3>ONG Exemplo 3</h3>
-            <p>Descrição curta</p>
-          </a>
+          <div class="card-topo">
+            <img src="assets/ong-1.jpg" alt="Logo da ONG 3">
+          </div>
+          <div class="card-base">
+            <h3>ONG 3</h3>
+            <a href="ong3.html" class="btn-ong">Ver Mais</a>
+          </div>
         </article>
+
         <article class="card-ong">
-          <a href="ong4.html">
-            <h3>ONG Exemplo 4</h3>
-            <p>Descrição curta</p>
-          </a>
+          <div class="card-topo">
+            <img src="assets/ong-1.jpg" alt="Logo da ONG 4">
+          </div>
+          <div class="card-base">
+            <h3>ONG 4</h3>
+            <a href="ong4.html" class="btn-ong">Ver Mais</a>
+          </div>
         </article>
+
         <article class="card-ong">
-          <a href="ong5.html">
-            <h3>ONG Exemplo 5</h3>
-            <p>Descrição curta</p>
-          </a>
+          <div class="card-topo">
+            <img src="assets/ong-1.jpg" alt="Logo da ONG 5">
+          </div>
+          <div class="card-base">
+            <h3>ONG 5</h3>
+            <a href="ong5.html" class="btn-ong">Ver Mais</a>
+          </div>
         </article>
+
         <article class="card-ong">
-          <a href="ong6.html">
-            <h3>ONG Exemplo 6</h3>
-            <p>Descrição curta</p>
-          </a>
+          <div class="card-topo">
+            <img src="assets/ong-1.jpg" alt="Logo da ONG 6">
+          </div>
+          <div class="card-base">
+            <h3>ONG 6</h3>
+            <a href="ong6.html" class="btn-ong">Ver Mais</a>
+          </div>
         </article>
         <!-- mais cards -->
       </div>
+
       <button class="seta-direita"aria-label="Ver próximo">&rarr;</button>
       </div>
     </section>
@@ -88,8 +130,7 @@
   </main>
   
   <footer class="rodape">
-      <p>Todos os direitos reservados &copy; 2025</p>
-    </element>
+    <p>Todos os direitos reservados &copy; 2025</p>
   </footer>
     
 </body>
