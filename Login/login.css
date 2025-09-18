@@ -1,0 +1,170 @@
+/* Primeiros passos */
+/* 1- Resetar estilo padrão do navegador. */
+/* 2- Configurar o estilo do Header. */
+
+* {
+    font-family: "TASA Orbiter", sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    padding: 0 15px;
+    height: 60px;
+
+    box-shadow: 5px 5px 10px #bec0c025;
+    background-color: #ffff;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.logo {
+    padding: 30px;
+}
+img {
+    display: block;
+    height: auto;
+    width: 60px;
+}
+
+.ul-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul a {
+    color: #2f8b83;
+    font-weight: 600;
+}
+li i {
+    color: #104e49;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 30px #104e4927;
+    border-radius: 8px;
+
+
+    padding: 35px;
+    max-width: 350px;
+    
+    background-color: #ffff;
+    font-size: 1rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 3px;
+}
+
+.form-group p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.form-group p a {
+    color: #104e49;
+    font-weight: 600;
+}
+
+.button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px 0 5px;
+}
+
+.button-box button {
+    background-color: #2f8b83;
+    color: #ffff;
+
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+form h2 {
+    color: #2f8b83;
+    text-align: center;
+    font-weight: 500;
+    font-size: 27px;
+}
+form p {
+    font-size: 13px;
+    padding:10px 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #001f1d;
+  
+}
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid #334b5f8f;
+}
+
+.input-box label {
+    color: #001f1d;
+    font-weight: 500;
+}
+
+.input-box input::placeholder {
+    padding: 10px 5px 10px;
+    font-size: 1rem;
+    color: #0e46418c;
+}
+
+
+.line::after {
+    content: "";
+    background: #777777;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
