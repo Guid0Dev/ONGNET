@@ -18,6 +18,7 @@ body {
     min-height: 100vh;
     min-width: 10vw;
     display: flex;
+    background-color: #f8f8f846;
     flex-direction: column;
 }
 
@@ -32,7 +33,8 @@ header {
     height: 60px;
 
     box-shadow: 5px 5px 10px #bec0c025;
-    background-color: #ffff;
+    background-color: #eaf7fc;
+    border: 1px solid #ebebeb;
     border-radius: 0 0 10px 10px;
 }
 
@@ -42,10 +44,12 @@ header {
     justify-content: space-evenly;
     width: 100%;
 }
+
 .logo {
     padding: 30px;
 }
-img {
+
+.logo img {
     display: block;
     height: auto;
     width: 60px;
@@ -58,19 +62,25 @@ img {
     gap: 15px;
 }
 
-ul a {
-    color: #2f8b83;
-    font-weight: 600;
+.ul-header a {
+    color: #012C45;
+    font-weight: 500;
+    transition: all .5s ease;
 }
-li i {
-    color: #104e49;
+.ul-header a:hover {
+    color: #236963;
 }
+.ul-header li i {
+    color: #072220;
+}
+
 section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 50px auto;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -79,13 +89,14 @@ form {
     box-shadow: 5px 5px 30px #104e4927;
     border-radius: 8px;
 
-
+    border: 1px solid #001f1d31;
     padding: 35px;
     max-width: 350px;
-    
-    background-color: #ffff;
+
+    background-color: #f4fcff;
     font-size: 1rem;
 }
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -101,30 +112,35 @@ form {
     gap: 3px;
 }
 
-.form-group p {
-    font-size: 13px;
-    text-align: center;
-}
 
 .form-group p a {
-    color: #104e49;
+    color: #3b817b;
     font-weight: 600;
 }
-
+.form-group p a:hover {
+    text-decoration: underline;
+}
 .button-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:5px 0 5px;
+    padding: 5px 0 5px;
 }
 
 .button-box button {
-    background-color: #2f8b83;
+    background-color: #073536;
     color: #ffff;
 
     padding: 8px 10px;
     width: 100%;
+    cursor: pointer;
+
     font-size: 16px;
+
+    transition: all .5s ease;
+}
+.button-box button:hover {
+    background-color: #236963;
 }
 
 form h2 {
@@ -133,19 +149,23 @@ form h2 {
     font-weight: 500;
     font-size: 27px;
 }
+
 form p {
     font-size: 13px;
-    padding:10px 15px;
+    padding: 10px 15px;
     text-align: center;
     font-weight: 500;
     color: #001f1d;
-  
+
 }
+
 .input-box input {
     width: 100%;
     padding: 12px;
     border-radius: 3px;
     border: 1px solid #334b5f8f;
+    transition: all 1s ease;
+
 }
 
 .input-box label {
@@ -159,12 +179,15 @@ form p {
     color: #0e46418c;
 }
 
-
-.line::after {
+.input-box input:focus {
+    border: 1px solid #2f8b83;
+    box-shadow: .5px .5px 5px #2f8b8373;
+}
+.line {
     content: "";
-    background: #777777;
-    height: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 1px;
+    background-color: #07222069;
 }
