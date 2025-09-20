@@ -1,0 +1,124 @@
+* {
+    font-family: "TASA Orbiter", sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+
+    top: 0;
+    z-index: 1000;
+    padding: 0 15px;
+    height: 60px;
+
+    box-shadow: 5px 5px 10px #bec0c025;
+    background-color: #eaf7fc;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.logo {
+    padding: 30px;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 60px;
+}
+
+.ul-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul a {
+    color: #2f8b83;
+    font-weight: 600;
+}
+
+li i {
+    color: #104e49;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 5px 5px 30px #104e4927;
+    border-radius: 8px;
+    max-width: 1200px;
+    background-color: #f4fcff;
+
+    padding: 45px;
+    margin: 20px auto;    
+    width: 90%;           
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.containerPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #043450;
+    border-radius: 10px;
+}
+
+.integrantes {
+    flex: 1 1 280px;
+    background-color: #eaf7fc;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.integrantes img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
