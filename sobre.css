@@ -1,6 +1,5 @@
 * {
     font-family: "TASA Orbiter", sans-serif;
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -70,9 +69,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 80px auto;
+    margin: 30px auto;
 }
-
 
 section .container {
     display: flex;
@@ -82,12 +80,12 @@ section .container {
 
     box-shadow: 5px 5px 30px #104e4927;
     border-radius: 8px;
-    max-width: 1200px;
+    max-width: 100%;
     background-color: #f4fcff;
 
     padding: 45px;
-    margin: 20px auto;    
-    width: 90%;           
+    margin: 20px auto;
+    width: 80%;
     font-size: 1rem;
     gap: 1rem;
 }
@@ -114,11 +112,11 @@ section .container {
 
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .integrantes img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-bottom: 20px;
 }
