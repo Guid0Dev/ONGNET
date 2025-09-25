@@ -76,7 +76,6 @@ section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     box-shadow: 5px 5px 30px #104e4927;
     border-radius: 8px;
@@ -86,8 +85,16 @@ section .container {
     padding: 45px;
     margin: 20px auto;
     width: 80%;
-    font-size: 1rem;
     gap: 1rem;
+
+    font-size: 1.1rem;
+    line-height: 1.6; 
+    text-align: justify;
+}
+
+section .container h1 {
+    color: #043450;
+    margin-bottom: 15px;
 }
 
 .containerPerfil {
@@ -115,8 +122,35 @@ section .container {
     gap: 20px;
 }
 
+.integrantes {
+    flex: 1 1 280px;
+    background-color: #eaf7fc;
+    color: #043450;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.integrantes:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.integrantes h2 {
+    font-size: 1.2rem;
+    color: #2f8b83;
+}
+
+.integrantes p {
+    font-size: 0.95rem;
+}
+
 .integrantes img {
     width: 120px;
     height: 120px;
+    object-fit: cover;
     border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid #043450;
 }
