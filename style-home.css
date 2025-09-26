@@ -51,7 +51,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .ul-header a {
@@ -301,27 +301,24 @@ footer {
   margin: 0;
 }
 
-/* Adicione esta media query para telas menores */
 @media (max-width: 768px) {
-    /* 1. MOSTRAR O ÍCONE HAMBURGER */
     .hamburger {
-        display: block; /* O ícone aparece em telas pequenas */
+        display: block;
     }
 
-    /* 2. ESCONDER E AJUSTAR O MENU PADRÃO (ul-header) */
     .ul-header {
         position: absolute;
-        top: 60px; /* Altura do seu header */
+        top: 50px; 
         left: 0;
         right: 0;
-        flex-direction: column; /* Coloca os links na vertical */
-        background-color: #e6f7ff; /* Cor de fundo do seu header */
+        flex-direction: column; 
+        background-color: #e6f7ff;
         width: 100%;
-        height: 0; /* Começa com altura zero (escondido) */
-        overflow: hidden; /* Esconde o conteúdo que transborda */
-        transition: height 0.3s ease-in-out; /* Transição suave */
+        height: 0; 
+        overflow: hidden; 
+        transition: height 0.3s ease-in-out;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 0; /* Zera o padding inicial */
+        padding: 0; 
         border-radius: 0 0 10px 10px;
          z-index: 999;
     }
@@ -329,7 +326,7 @@ footer {
     .ul-header li {
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     .ul-header li a {
@@ -337,23 +334,21 @@ footer {
         padding: 5px 0;
     }
 
-    /* 3. CLASSE PARA O MENU ABERTO (Adicionada via JS) */
     .ul-header.active {
-        height: 180px; /* Ajuste esta altura para acomodar todos os seus links */
-        padding: 10px 0; /* Adiciona padding quando ativo */
+        height: 280px; 
+        padding: 10px 0; 
     }
     
-    /* 4. ANIMAÇÃO PARA O ÍCONE HAMBURGER (Opcional, mas legal) */
     .hamburger.active .bar:nth-child(2) {
-        opacity: 0; /* Esconde a barra do meio */
+        opacity: 0; 
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg); /* Gira a primeira barra */
+        transform: translateY(8px) rotate(45deg); 
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg); /* Gira a terceira barra */
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 
