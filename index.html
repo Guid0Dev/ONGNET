@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ONG NET</title>
+  <title>ONGNET</title>
 
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
@@ -26,9 +26,17 @@
           <img src="/assets/logo-ongnet.png" alt="Logo ONGNET" width="50">
         </a>
       </div>
-      <ul class="ul-header">
+
+      <div class="hamburger" id="hamburger-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul class="ul-header" id="nav-links">
+      
         <li>
-          <a href="/" target="_self">
+          <a href="index.html" target="_self">
             <span>Home</span>
             <!-- <i class="fi fi-ss-home"></i> -->
           </a>
@@ -164,6 +172,27 @@
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const navLinks = document.getElementById("nav-links");
+
+    if (hamburgerIcon && navLinks) {
+        hamburgerIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburgerIcon.classList.toggle("active");
+        });
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove("active");
+                hamburgerIcon.classList.remove("active");
+            });
+        });
+    } else {
+        console.error("Erro: Elementos do menu de navegação (IDs 'hamburger-icon' ou 'nav-links') não foram encontrados.");
+    }
+});
   </script>
 
 </body>
