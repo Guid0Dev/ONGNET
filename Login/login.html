@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONGNET | Login</title>
     <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,19 +20,31 @@
 
         <nav class="nav-header">
             <div class="logo">
-                <a href="/">
+                <a href="/home.html">
                     <img src="./img/logo-ongnet.png" alt="Logo ONGNET" width="50">
                 </a>
             </div>
-            <ul class="ul-header">
+
+
+            <ul class="ul-header" id="menuLink">
                 <li>
-                    <a href="/" target="_self">
+                    <a href="/home.html" target="_self">
                         <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="login.html" target="_self">
+                    <a href="cadastro.html" target="_self">
                         <span>Sou ONG</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" target="_self">
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html" target="_self">
+                        <span>Planos</span>
                     </a>
                 </li>
                 <li>
@@ -42,7 +52,11 @@
                         <span>Sobre nós</span>
                     </a>
                 </li>
+
             </ul>
+            <button type="button" aria-label="Abrir menu da navegação" aria-expanded="false" id="btnMenu">
+                <i class="fi fi-rr-menu-burger"></i>
+            </button>
 
         </nav>
 
@@ -53,12 +67,10 @@
         <section>
 
             <form>
-                <h2>Bem-vindo de volta.</h2>
-                <p>Precisamos que você se identifique novamente para continuar</p>
                 <div class="form-group">
                     <div class="input-box">
-                        <label for="cnpj">Email</label>
-                        <input type="text" placeholder="Digite seu email" name="cnpj" id="cnpj">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Digite seu email" name="email" id="email">
                     </div>
                     <div class="input-box">
                         <label for="password">Senha</label>
@@ -70,17 +82,24 @@
                     <div class="line">
 
                     </div>
-                    <p><a href="/cadastro.html">Ainda não possui uma conta?</a></p>
+                    <p><a href="/cadastro.html">Ainda não possui uma conta? <br>Cadastre-se</a></p>
             </form>
         </section>
     </main>
     <footer>
         <address>
-         <p>© 2025 ONGNET. Todos os direitos reservados.</p>
+            <p>© 2025 ONGNET. Todos os direitos reservados.</p>
         </address>
     </footer>
+    <script src="menu.js"></script>
+    <script> 
+        const input = document.querySelectorAll('input');
+        const inputEmail = input.trim();
+        const inputPassword = input.trim();
+        
 
-    <script src="login.js"></script>
+
+    </script>
 </body>
 
 </html>
