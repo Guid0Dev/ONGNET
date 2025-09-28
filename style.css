@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 15px;
+  height: 60px;
+
+  box-shadow: 5px 5px 10px #bec0c025;
+  background-color: #e6f7ff;
+  border-radius: 0 0 10px 10px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px; 
+    margin: 0 auto;
+}
+.logo {
+  padding: 30px;
+}
+.logo img {
+  display: block;
+  height: auto;
+  width: 60px;
+}
+
+.ul-header {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ul-header a {
+  color: #2f8b83;
+  font-weight: 600;
+}
+.ul-header li i {
+  color: #e6f6fc;
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #004d40;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+body {
+  font-family: "Tasa Orbiter", Sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.5;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #e6f6fc;
+}
+
+.site-header .logo img {
+  height: 40px;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover {
+  color: #007b7f;
+}
+
+.site-main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  flex: 1;
+  background: linear-gradient(to bottom, #009688, #004d40);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.form-section {
+  flex: 1;
+  background: #e6f6fc;
+  padding: 62px;
+}
+
+.form-section h2 {
+  font-size: 19px;
+  margin-bottom: 16px;
+  color: #004d40;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 24px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-actions button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(to right, #004d40, #009688);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-actions button:hover {
+  opacity: 0.9;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  background: #f1f1f1;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .ul-header {
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        right: 0;
+        flex-direction: column; 
+        background-color: #e6f7ff;
+        width: 100%;
+        height: 0; 
+        overflow: hidden; 
+        transition: height 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0; 
+        border-radius: 0 0 10px 10px;
+         z-index: 999;
+    }
+    
+    .ul-header li {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .ul-header li a {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .ul-header.active {
+        height: 280px; 
+        padding: 10px 0; 
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); 
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
