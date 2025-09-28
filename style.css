@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* fundo branco */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.topo {
+  background: #e6f7f9;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.topo .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Perfil */
+.perfil {
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+}
+
+.perfil-card {
+  background: #e6f7f9;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+}
+
+
+.perfil-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: 1px solid #004aad;
+  background: #cdeff6;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #b3e6ed;
+}
+
+/* Formulário */
+.formulario {
+  display: flex;
+  justify-content: center;
+  padding: 15px 40px;
+}
+
+.form-card {
+  background: #062c4d;
+  margin-top: -10px;
+  color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 2px solid #ccc; 
+}
+
+.form-card h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.salvar {
+  background: #9ae8f7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.salvar:hover {
+  background: #7bd4e4;
+}
+
+.cancelar {
+  background: #f55b5b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.cancelar:hover {
+  background: #d94a4a;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #e6f7f9;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+    .perfil-card, .form-card {
+        padding: 20px;
+    }
+}

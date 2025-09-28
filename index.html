@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG NET</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="topo">
+    <div class="container">
+      <img src="assets/img/logo_cortada.png" alt="ONG NET" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sou ONG</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Perfil -->
+  <main>
+    <section class="perfil">
+      <div class="perfil-card">
+        <img id="fotoUsuario" src="assets/img/avatar.png" alt="Foto de perfil">
+        <h2>Nome do Usuário / ONG</h2>
+        <label for="uploadFoto" class="btn">Alterar Foto</label>
+        <input type="file" id="uploadFoto" accept="image/*" hidden>
+      </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="formulario">
+      <div class="form-card">
+        <h3>Formulário Perfil</h3>
+        <form>
+          <input type="text" placeholder="Nome Completo / Nome da ONG" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Telefone" required>
+          <input type="text" placeholder="CEP" required>
+
+          <h3>Projetos</h3>
+          <textarea placeholder="Projetos"></textarea>
+
+          <div class="botoes">
+            <button type="submit" class="salvar">Salvar Alterações</button>
+            <button type="reset" class="cancelar">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Todos os direitos reservados © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
