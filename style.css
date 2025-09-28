@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff; /* fundo branco */
+  background-color: #ffffff;
   color: #222;
   line-height: 1.6;
 }
 
-/* Cabeçalho */
 .topo {
   background: #e6f7f9;
   padding: 10px 20px;
@@ -46,7 +44,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Perfil */
 .perfil {
   display: flex;
   justify-content: center;
@@ -86,7 +83,6 @@ nav a:hover {
   background: #b3e6ed;
 }
 
-/* Formulário */
 .formulario {
   display: flex;
   justify-content: center;
@@ -155,7 +151,6 @@ textarea {
   background: #d94a4a;
 }
 
-/* Rodapé */
 footer {
   text-align: center;
   padding: 15px;
@@ -163,7 +158,6 @@ footer {
   font-size: 14px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
