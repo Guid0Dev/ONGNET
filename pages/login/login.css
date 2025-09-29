@@ -138,7 +138,8 @@ form {
     padding: 5px 0 5px;
 }
 
-.button-box button {
+.button-box  {
+    text-decoration: ;
     background-color: #073536;
     color: #ffff;
 
