@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento com Cartão</title>
+  <link rel="stylesheet" href="pagamentos.css">
+</head>
+<body>
+  <div class="pagamento-container">
+    <div class="cartoes">
+      <div class="cartao-frente">
+        <p class="numero-cartao">0000 0000 0000 0000</p>
+        <p class="nome-cartao">Nome Completo</p>
+        <p class="validade-cartao">00/00</p>
+      </div>
+      <div class="cartao-verso">
+        <div class="faixa-preta"></div>
+        <p class="cvc-cartao">CVC</p>
+      </div>
+    </div>
+
+    <form class="formulario-pagamento" id="form-pagamento">
+      <label for="nome">Nome do Cartão</label>
+      <input type="text" id="nome" placeholder="Nome completo" required>
+
+      <label for="numero">Número do Cartão</label>
+      <input type="text" id="numero" placeholder="0000 0000 0000 0000" maxlength="19" required>
+
+      <label for="validade">Validade (Mês/Ano)</label>
+      <input type="text" id="validade" placeholder="MM / AA" required>
+
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc" placeholder="___" maxlength="3" required>
+
+      <button type="submit">Confirmar</button>
+    </form>
+  </div>
+
+  <div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+  <script src="pagamentos.js"></script>
+</body>
+</html>

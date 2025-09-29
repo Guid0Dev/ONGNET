@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de ONG</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=TASA+Orbiter:wght@400..800&display=swap"
+    rel="stylesheet">
+  <link rel="Icon" href="assets/icons/logo_cortada.png" type="Logo.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../../assets/logo-ongnet.png" alt="Logo ONGNET" width="50">
+                </a>
+            </div>
+            <ul class="nav-ul">
+                <li>
+                    <a href="../../index.html" target="_self">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/login.html" target="_self">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="../planos/planos.html" target="_self">
+                        Planos
+                    </a>
+                </li>
+                <li>
+                    <a href="../sobre/index.html" target="_self">
+                        Sobre
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="site-main">
+
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">
+        Onde iniciativas sociais encontram apoio e visibilidade.
+      </h1>
+      <p><strong>#TransformaComOngNet</strong></p>
+    </section>
+
+    <section class="form-section" aria-labelledby="form-title">
+      <h2 id="form-title">Bem-vinda, ONG</h2>
+
+      <form id="cadastro-ong" action="#" method="post" novalidate>
+
+
+        <fieldset>
+          <label for="nome">Nome da instituição</label>
+          <input type="text" id="nome" name="nome" placeholder="Insira o nome da instituição" required
+            aria-required="true">
+
+          <label for="representante">Representante</label>
+          <input type="text" id="representante" name="representante" placeholder="Insira o nome do representante"
+            required aria-required="true">
+
+          <label for="cnpj">CNPJ</label>
+          <input type="text" id="cnpj" name="cnpj" placeholder="Insira o CNPJ" inputmode="numeric" required
+            aria-required="true">
+
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="Insira o CEP" inputmode="numeric" required
+            aria-required="true">
+
+          <label for="numero">Número do endereço</label>
+          <input type="text" id="numero" name="numero" placeholder="Insira o número" required aria-required="true">
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required aria-required="true">
+        </fieldset>
+
+
+        <div class="form-actions">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Todos os direitos reservados &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

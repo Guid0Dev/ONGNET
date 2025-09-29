@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG NET - Planos</title>
+  <link rel="stylesheet" href="planos.css">
+  <link rel="stylesheet" href="cartao.css">
+</head>
+<body>
+
+  <header>
+        <nav class="nav-header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../../assets/logo-ongnet.png" alt="Logo ONGNET" width="50">
+                </a>
+            </div>
+            <ul class="nav-ul">
+                <li>
+                    <a href="../../index.html" target="_self">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/login.html" target="_self">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="../planos/planos.html" target="_self">
+                        Planos
+                    </a>
+                </li>
+                <li>
+                    <a href="../sobre/index.html" target="_self">
+                        Sobre
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <h1>Escolha o plano ideal para sua jornada</h1>
+    <section class="planos">
+      <div class="plano">
+        <h2>Plano gratuito – Solidariedade aberta</h2>
+        <ul>
+          <li>Acesso completo ao banco de ONGs</li>
+          <li>Perfil básico com localização</li>
+          <li>Visualização de projetos e campanhas</li>
+          <li>Com anúncios</li>
+        </ul>
+     <a href="pagamentos.html" class="btn-assinar" data-plano="gratuito" disabled>Assinar</a>
+      </div>
+
+      <div class="plano destaque">
+        <h2>Plano Conectado – R$9,90/mês</h2>
+        <ul>
+          <li>Navegação sem anúncios</li>
+          <li>Filtros avançados de busca</li>
+          <li>Favoritos de ONGs e projetos</li>
+          <li>Notificações e atualizações</li>
+        </ul>
+        <a href="pagamentos.html" class="btn-assinar" data-plano="gratuito" disabled>Assinar</a>
+        <p class="mensagem"></p>
+      </div>
+
+      <div class="plano">
+        <h2>Plano Impacto – R$29,90/mês</h2>
+        <ul>
+          <li>Perfil instrucional com galeria</li>
+          <li>Perfil destacado</li>
+          <li>Acesso a campanhas exclusivas</li>
+          <li>Suporte personalizado</li>
+          <li>Encontros mensais</li>
+        </ul>
+        <a href="pagamentos.html" class="btn-assinar" data-plano="gratuito" disabled>Assinar</a>
+        <p class="mensagem"></p>
+      </div>
+    </section>
+  </main>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <footer class="rodape">
+    <p>Todos os direitos reservados &copy; 2025</p>
+  </footer>
+  <script src="planos.js"></script>
+</body>
+</html>

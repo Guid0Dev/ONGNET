@@ -1,0 +1,255 @@
+/* Primeiros passos */
+/* 1- Resetar estilo padrão do navegador. */
+/* 2- Configurar o estilo do Header. */
+
+* {
+    font-family: "TASA Orbiter", sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 10vw;
+    display: flex;
+    background-color: #f8f8f846;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 15px;
+    height: 60px;
+
+    box-shadow: 5px 5px 10px #bec0c025;
+    background-color: #e6f7ff;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.logo img {
+    display: block;
+    height: auto;
+    width: 60px;
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-ul li {
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: transform 0.5s;
+}
+
+ul.nav-ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li:hover {
+    transform: scale(1.3);
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 30px #104e4927;
+    border-radius: 8px;
+
+    padding: 35px;
+    max-width: 100%;
+    width: 350px;
+
+    background-color: #ffffff;
+    font-size: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.form-group p a {
+    color: #3b817b;
+    font-weight: 600;
+}
+
+.form-group p a:hover {
+    text-decoration: underline;
+}
+
+.button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 5px;
+}
+
+.button-box button {
+    background-color: #073536;
+    color: #ffff;
+
+    padding: 8px 10px;
+    width: 100%;
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: all .5s ease;
+}
+
+.button-box button:hover {
+    background-color: #236963;
+}
+
+form h2 {
+    color: #2f8b83;
+    text-align: center;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+form p {
+    font-size: 13px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #001f1d;
+
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #334b5f8f;
+    transition: all 1s ease;
+}
+
+.input-box label {
+    color: #072220;
+    font-weight: 500;
+}
+
+.input-box input::placeholder {
+    padding: 10px 5px 10px;
+    font-size: 1rem;
+    color: #0e46418c;
+}
+
+.line {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1px;
+    background-color: #07222069;
+}
+
+
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    min-height:100dvh;
+    display: flex;
+    align-items:center;   
+}
+
+
+footer {
+    background-color: #e6f7ff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.rodape {
+    margin: 0;
+}
+
+#btnMenu {
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 20px;
+    color: #1b4e4a;
+}
+
+@media screen and (min-width: 700px) {
+
+    .ul-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+        position: initial;
+        padding: 0px;
+    }
+
+    #btnMenu {
+        display: none;
+    }
+
+    .ul-header li {
+        margin-bottom: 0;
+    }
+}
