@@ -75,9 +75,9 @@ O **Backend** da ONGNET é construído em **ASP.NET Core (C\#)** e segue uma arq
 | :--- | :--- | :--- |
 | **Raquel Souza** | Scrum Master, Product Owner & Frontend (UI/UX) | [Raquel-Vsouza](https://github.com/Raquel-Vsouza) |
 | **Guilherme Souza** | Backend Principal & API | [Guid0Dev](https://github.com/Raquel-Vsouza) |
-| **Raphaellen Correia** | Codificado e organizando a semântica | [Raphaellen18](https://github.com/Raphaellen18) |
+| **Raphaellen Correia** | Tech Lead | [Raphaellen18](https://github.com/Raphaellen18) |
 | **Dimitri Marin** | Design & Frontend (HTML/CSS) | [Dimi-005](https://github.com/Dimi-005) |
-| **Emerson** | Design | ... |
+| **Emerson Wesley** | Design | [emersonwlm](https://github.com/emersonwlm) |
 | **Nathallya Santos** | Desenvolvedora Frontend (UI/UX) | [natarouca](https://github.com/natarouca) |
 | **Geovanna Morais** | Desenvolvedora Frontend (HTML/CSS) | [Geo-Morais](https://github.com/Geo-Morais) |
 | **Julia Mota** | Desenvolvedora Frontend (HTML/CSS) | [Julia243b](https://github.com/Julia243b) |
