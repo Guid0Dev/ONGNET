@@ -57,6 +57,9 @@ Assumimos o compromisso com a inclusão. Nossa plataforma conta com suporte ao *
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
   <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
 </div>
 
 ### 🔌 API da ONGNET (Para Desenvolvedores)
@@ -74,7 +77,7 @@ O **Backend** da ONGNET é construído em **ASP.NET Core (C\#)** e segue uma arq
 | Nome | Função no Projeto | GitHub |
 | :--- | :--- | :--- |
 | **Raquel Souza** | Scrum Master, Product Owner & Frontend (UI/UX) | [Raquel-Vsouza](https://github.com/Raquel-Vsouza) |
-| **Guilherme Souza** | Backend Principal & API | [Guid0Dev](https://github.com/Raquel-Vsouza) |
+| **Guilherme Souza** | Backend Principal & API | [Guid0Dev](https://github.com/Guid0Dev) |
 | **Raphaellen Correia** | Tech Lead | [Raphaellen18](https://github.com/Raphaellen18) |
 | **Dimitri Marin** | Design & Frontend (HTML/CSS) | [Dimi-005](https://github.com/Dimi-005) |
 | **Emerson Wesley** | Design | [emersonwlm](https://github.com/emersonwlm) |
